@@ -1,5 +1,7 @@
 package basic_syntax
 
+import "fmt"
+
 type Weekday int
 
 const (
@@ -26,5 +28,5 @@ func (w Weekday) String() string {
 	if SUNDAY <= w && w <= SATURDAY {
 		return weekDayNames[w]
 	}
-	return "invalid weekday value"
+	return fmt.Sprintf("Invalid Weekday(%d)", w)
 }
