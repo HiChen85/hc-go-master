@@ -23,7 +23,7 @@ var weekDayNames = []string{
 }
 
 func (w Weekday) String() string {
-	if SATURDAY <= w && w <= SATURDAY {
+	if SUNDAY <= w && w <= SATURDAY {
 		return weekDayNames[w]
 	}
 	return "invalid weekday value"
